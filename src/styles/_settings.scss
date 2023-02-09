@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+
+$font-1: 'Oswald', sans-serif;
+$font-2: 'Quicksand', sans-serif;
+
+//#FBD7C9
+$color-1: #fef7f4;
+$color-2: #ffb688;
+$color-3: #888aff;
+$white: #ffffff;
+
+* {
+  padding: 0;
+  margin: 0 10px;
+  box-sizing: border-box;
+}
+
+body {
+  background: $color-1;
+  font-family: $font-2;
+  font-style: normal;
+  font-weight: 500;
+}
+
+h1 {
+  font-family: $font-1;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  img {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__tabs {
+    display: flex;
+    align-items: center;
+
+    a {
+      font-size: 20px;
+      color: black;
+      &:hover {
+        color: $color-2;
+      }
+    }
+  }
+}
