@@ -6,16 +6,12 @@
   margin: 50px;
   font-size: 20px;
 
-  h1 {
-    margin-bottom: 10px;
-  }
-
   &__presentation {
     margin: 20px 50px;
   }
 
   &__cover {
-    width: 40%;
+    width: 30%;
     margin: 20px;
   }
 
@@ -49,7 +45,7 @@
     justify-content: center;
     align-items: center;
     img {
-      width: 80%;
+      width: 55%;
     }
   }
 }

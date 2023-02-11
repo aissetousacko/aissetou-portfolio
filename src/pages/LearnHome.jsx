@@ -1,5 +1,6 @@
 import React from 'react'
 import lhLogo from '../assets/lh_logo.png'
+// import lhLogo2 from '../assets/lh_logo2.png'
 import lhPc from '../assets/lh_pc.png'
 import lhPc1 from '../assets/lh_pc1.png'
 import lhPc2 from '../assets/lh_pc2.png'
@@ -33,7 +34,7 @@ const LearnHome = () => {
           Avec cette application, le bénévole et l'élève peuvent accéder à
           plusieurs fonctionnalités en se connectant. Ils peuvent accéder à un
           calendrier et y ajouter des évènements, créer des tâches et les
-          catégoriser dans des listes, et communiquer rà travers une messagerie.
+          catégoriser dans des listes, et communiquer à travers une messagerie.
         </p>
       </div>
 
@@ -49,7 +50,7 @@ const LearnHome = () => {
       </div>
 
       <div className="learn__section2">
-        <p>Cette maquette a été réalisé avec l'outil de design Figma.</p>
+        <p>Cette maquette a été réalisée avec l'outil de design Figma.</p>
         <img src={lhMobile} alt="Maquette mobile" />
       </div>
 
