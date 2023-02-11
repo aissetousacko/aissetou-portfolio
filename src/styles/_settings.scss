@@ -6,7 +6,7 @@ $font-2: 'Quicksand', sans-serif;
 
 //#FBD7C9
 $color-1: #fef7f4;
-$color-2: #ffb688;
+$color-2: #f98253;
 $color-3: #888aff;
 $white: #ffffff;
 
@@ -33,4 +33,10 @@ li {
 
 a {
   text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  * {
+    margin: 0 5px;
+  }
 }

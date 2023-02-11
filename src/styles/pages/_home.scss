@@ -18,3 +18,19 @@
     width: 80%;
   }
 }
+
+@media (max-width: 480px) {
+  .home {
+    &__presentation {
+      padding: 40px;
+
+      p {
+        font-size: 35px;
+      }
+    }
+
+    &__work {
+      width: 100%;
+    }
+  }
+}
