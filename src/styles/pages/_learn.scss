@@ -52,5 +52,39 @@
 
 @media (max-width: 480px) {
   .learn {
+    margin: 40px 0;
+
+    &__cover {
+      width: 70%;
+      margin: 20px 10px;
+    }
+
+    &__presentation {
+      margin: 20px;
+    }
+
+    &__section1,
+    &__section2 {
+      flex-direction: column;
+      margin: 20px 10px;
+
+      img {
+        width: 400px;
+        height: 270px;
+      }
+
+      p {
+        margin: 20px;
+        padding: 0;
+      }
+    }
+
+    &__sketch-pc img {
+      width: 95%;
+    }
+
+    &__palette img {
+      width: 70%;
+    }
   }
 }
