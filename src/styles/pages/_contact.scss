@@ -27,3 +27,13 @@
     color: white;
   }
 }
+
+@media (max-width: 480px) {
+  .contact {
+    margin: 35px 0;
+
+    &__iconbox {
+      padding: 8px;
+    }
+  }
+}
