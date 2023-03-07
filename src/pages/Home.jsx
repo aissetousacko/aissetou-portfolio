@@ -17,7 +17,7 @@ const Home = () => {
           <Card
             img={hrnet}
             title="HRNet"
-            description="Application de gestion de dossiers"
+            description="Site de gestion d'employés"
           />
         </Link>
         <Link to="/learn-home">
