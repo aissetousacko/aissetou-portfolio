@@ -3,6 +3,7 @@ import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
+import HRNet from './pages/HRNet'
 import LearnHome from './pages/LearnHome'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/learn-home" element={<LearnHome />} />
+        <Route path="/hrnet" element={<HRNet />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />

@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin: 30px;
 
   img {
     cursor: pointer;
@@ -16,8 +16,9 @@
     a {
       font-size: 20px;
       color: black;
+      padding: 0 10px;
       &:hover {
-        color: $color-2;
+        color: $color-1;
       }
     }
   }
