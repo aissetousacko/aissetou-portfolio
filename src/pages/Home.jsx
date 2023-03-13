@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from '../components/Card'
-import learnHome from '../assets/learn_home/lh_card.png'
+import learnHome from '../assets/learn_home/lh_cover.png'
 import hrnet from '../assets/hrnet/hrnet_cover.png'
 import { Link } from 'react-router-dom'
 
@@ -18,6 +18,7 @@ const Home = () => {
             img={hrnet}
             title="HRNet"
             description="Site de gestion d'employés"
+            reverse={false}
           />
         </Link>
         <Link to="/learn-home">
@@ -25,6 +26,7 @@ const Home = () => {
             img={learnHome}
             title="Learn@Home"
             description="Application de soutien scolaire"
+            reverse={true}
           />
         </Link>
       </div>
