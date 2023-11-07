@@ -1,0 +1,121 @@
+@import '../settings';
+@import '../mixins';
+
+.learn {
+  @include align-content;
+  font-weight: 400;
+
+  &__infos {
+    display: flex;
+    margin-top: 65px;
+
+    img {
+      width: 50%;
+    }
+
+    &-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    &-part2 {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+    }
+  }
+
+  &__type,
+  &__date {
+    margin-right: 10px;
+
+    h1 {
+      font-size: 25px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+  }
+
+  // &__presentation {
+  //   margin: 20px 50px;
+  // }
+
+  &__cover {
+    width: 30%;
+    margin: 20px;
+  }
+
+  &__section1,
+  &__section2 {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 50%;
+    }
+
+    p {
+      padding: 0 70px;
+    }
+  }
+
+  &__sketch-pc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+      width: 40%;
+      margin: 10px;
+    }
+  }
+
+  &__palette {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 55%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .learn {
+    margin: 40px 0;
+
+    &__cover {
+      width: 70%;
+      margin: 20px 10px;
+    }
+
+    &__presentation {
+      margin: 20px;
+    }
+
+    &__section1,
+    &__section2 {
+      flex-direction: column;
+      margin: 20px 10px;
+
+      img {
+        width: 400px;
+        height: 270px;
+      }
+
+      p {
+        margin: 20px;
+        padding: 0;
+      }
+    }
+
+    &__sketch-pc img {
+      width: 95%;
+    }
+
+    &__palette img {
+      width: 70%;
+    }
+  }
+}
