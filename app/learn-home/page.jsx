@@ -1,8 +1,9 @@
 import styles from 'styles/pages/LearnHome.module.scss'
-import lhPc from 'public/learn_home/lh_pc.png'
-import Tags from '../components/Tags/Tags'
-import { FaImage } from 'react-icons/fa'
-import { FaTimes } from 'react-icons/fa'
+import stylesTag from '../components/Tags/Tags.module.scss'
+import lhDisplay from 'public/learn_home/lh_display.png'
+// import Tags from '../components/Tags/Tags'
+// import { FaImage } from 'react-icons/fa'
+// import { FaTimes } from 'react-icons/fa'
 import Image from 'next/image'
 
 const LearnHome = () => {
@@ -26,7 +27,12 @@ const LearnHome = () => {
       <h1>Learn@Home</h1>
 
       <div className={styles.learn__infos}>
-        <Image src={lhPc} width={650} height={400} alt="Mockup Learn@Home" />
+        <Image
+          src={lhDisplay}
+          width={750}
+          height={560}
+          alt="Mockup Learn@Home"
+        />
 
         <div className={styles.learn__infosRight}>
           <p className={styles.learn__description}>
@@ -36,7 +42,8 @@ const LearnHome = () => {
             accessible sur un ordinateur ou un smartphone.
           </p>
 
-          <Tags text="Figma" tag="tech" />
+          {/* <Tags text="Figma" tag="tech" /> */}
+          <p className={stylesTag.tech}>Figma</p>
 
           <div className={styles.learn__infosPart2}>
             <div className={styles.learn__date}>
@@ -50,7 +57,8 @@ const LearnHome = () => {
             </div>
           </div>
 
-          <Tags text="UI Design" tag="tag-ui" />
+          {/* <Tags text="UI Design" tag="tag-ui" /> */}
+          <p className={stylesTag.tagUi}>UI Design</p>
         </div>
       </div>
 

@@ -1,7 +1,10 @@
 import styles from './Tags.module.scss'
 
 const Tags = ({ text, tag }) => {
-  return <p className={tag}>{text}</p>
+  // if ((tag = 'tech')) {
+  //   return <p className={styles.tag}>{text}</p>
+  // }
+  return <p className={styles.tag}>{text}</p>
 }
 
 export default Tags
