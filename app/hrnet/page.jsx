@@ -29,6 +29,7 @@ const HRNet = () => {
             <p className={stylesTag.tech}>ReactJS</p>
             <p className={stylesTag.tech}>MUI</p>
             <p className={stylesTag.tech}>Formik</p>
+            <p className={stylesTag.tech}>SASS</p>
           </div>
 
           <div className={styles.hrnet__infosPart2}>

@@ -1,0 +1,35 @@
+@import '../settings';
+@import '../mixins';
+
+.oxyty {
+  @include align-content;
+  font-weight: 400;
+
+  &__infos {
+    display: flex;
+    margin-top: 65px;
+
+    &Right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    &Part2 {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+    }
+  }
+
+  &__type,
+  &__date {
+    margin-right: 10px;
+
+    h1 {
+      font-size: 25px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+  }
+}
