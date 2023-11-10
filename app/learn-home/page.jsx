@@ -1,30 +1,15 @@
 'use client'
 import styles from 'styles/pages/LearnHome.module.scss'
 import stylesTag from '../components/Tags/Tags.module.scss'
+import stylesIcons from '../../styles/icons.module.scss'
 import lhDisplay from 'public/learn_home/lh_display.png'
 // import Tags from '../components/Tags/Tags'
 import { FaImage } from 'react-icons/fa'
-// import { FaTimes } from 'react-icons/fa'
 import Image from 'next/image'
 import Modal from '../components/Modal/Modal'
 import { Fragment, useState } from 'react'
 
 const LearnHome = () => {
-  /**
-   * Modal code
-   */
-
-  // const modalContainer = document.querySelector('.modal__container')
-  // const modalTriggers = document.querySelectorAll('.modal__trigger')
-  // modalTriggers.forEach((trigger) =>
-  //   trigger.addEventListener('click', toggleModal)
-  // )
-
-  // function toggleModal() {
-  //   console.log('click')
-  //   modalContainer.classList.toggle('active')
-  // }
-
   const [showModal, setShowModal] = useState(false)
 
   return (
@@ -68,11 +53,7 @@ const LearnHome = () => {
           </div>
         </div>
 
-        {/* Bouton pour ouvrir la modale */}
-        <button
-          className={styles.modal__btn + ' ' + styles.modal__trigger}
-          onClick={() => setShowModal(true)}
-        >
+        <button className={stylesIcons.icon} onClick={() => setShowModal(true)}>
           <FaImage />
         </button>
 

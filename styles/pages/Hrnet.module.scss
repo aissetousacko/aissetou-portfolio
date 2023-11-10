@@ -1,17 +1,13 @@
 @import '../settings';
 @import '../mixins';
 
-.learn {
+.hrnet {
   @include align-content;
   font-weight: 400;
 
   &__infos {
     display: flex;
     margin-top: 65px;
-
-    // img {
-    //   width: fit-content;
-    // }
 
     &Right {
       display: flex;

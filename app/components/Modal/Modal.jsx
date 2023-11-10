@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { FaTimes } from 'react-icons/fa'
-import styles from 'styles/pages/LearnHome.module.scss'
+import styles from './Modal.module.scss'
 
 const Modal = ({ isVisible, onClose }) => {
   if (!isVisible) return null
