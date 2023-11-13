@@ -26,6 +26,12 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .navbar {
+    margin: 0;
+  }
+}
+
 @media (max-width: 480px) {
   .navbar {
     margin-top: 15px;

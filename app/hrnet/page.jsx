@@ -13,7 +13,13 @@ const HRNet = () => {
       <h1>HRNet</h1>
 
       <div className={styles.hrnet__infos}>
-        <Image src={hrnetDisplay} width={750} height={560} alt="Logo HRNet" />
+        <Image
+          src={hrnetDisplay}
+          width={750}
+          height={560}
+          sizes="(min-width: 500px) 750px, 460px"
+          alt="Cover HRNet"
+        />
 
         <div className={styles.hrnet__infosRight}>
           <p className={styles.hrnet__description}>

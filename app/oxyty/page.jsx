@@ -24,7 +24,6 @@ const Oxyty = () => {
             height={560}
             sizes="(min-width: 500px) 750px, 460px"
             alt="Cover Oxyty"
-            className={styles.oxyty__img}
           />
         </div>
 

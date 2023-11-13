@@ -35,7 +35,9 @@
 }
 
 @media (max-width: 1024px) {
-  .tags {
+  .tags,
+  .tagDev,
+  .tagUi {
     margin: 20px 0;
   }
 
