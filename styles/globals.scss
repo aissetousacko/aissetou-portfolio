@@ -36,25 +36,3 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
-
-// .link {
-//   background-color: #5366f9;
-//   padding: 10px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 15%;
-//   margin: 40px auto 20px auto;
-//   color: white;
-//   border-radius: 5px;
-
-//   &__icon {
-//     margin: 0 7px;
-//   }
-// }
-
-@media (max-width: 480px) {
-  * {
-    margin: 0 5px;
-  }
-}
