@@ -33,3 +33,13 @@
   width: fit-content;
   font-weight: 700;
 }
+
+@media (max-width: 1024px) {
+  .tags {
+    margin: 20px 0;
+  }
+
+  .tech {
+    margin-right: 10px;
+  }
+}

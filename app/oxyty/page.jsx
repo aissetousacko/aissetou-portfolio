@@ -17,7 +17,16 @@ const Oxyty = () => {
       <h1>Oxyty</h1>
 
       <div className={styles.oxyty__infos}>
-        <Image src={oxytyDisplay} width={750} height={560} alt="Logo HRNet" />
+        <div className={styles.oxyty__imgContainer}>
+          <Image
+            src={oxytyDisplay}
+            width={750}
+            height={560}
+            sizes="(min-width: 500px) 750px, 460px"
+            alt="Cover Oxyty"
+            className={styles.oxyty__img}
+          />
+        </div>
 
         <div className={styles.oxyty__infosRight}>
           <p className={styles.oxyty__description}>
