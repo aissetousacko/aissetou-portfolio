@@ -22,6 +22,7 @@ const LearnHome = () => {
             src={lhDisplay}
             width={750}
             height={560}
+            priority={true}
             sizes="(min-width: 500px) 750px, 460px"
             alt="Mockup Learn@Home"
           />
