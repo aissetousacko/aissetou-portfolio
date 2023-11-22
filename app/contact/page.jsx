@@ -2,6 +2,11 @@ import Link from 'next/link'
 import { FaEnvelope, FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import styles from 'styles/pages/Contact.module.scss'
 
+export const metadata = {
+  title: 'Contact',
+  description: 'Informations de contact',
+}
+
 const Contact = () => {
   return (
     <div className={styles.contact}>
