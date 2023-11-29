@@ -1,0 +1,39 @@
+@import '../utils/variables';
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+
+  img {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__tabs {
+    display: flex;
+    align-items: center;
+
+    a {
+      font-size: 20px;
+      color: black;
+      padding: 0 10px;
+      &:hover {
+        color: $color-1;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    margin-top: 15px;
+  }
+}

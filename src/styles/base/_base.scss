@@ -1,0 +1,30 @@
+@import '../utils/variables';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  margin: 0 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+b {
+  color: $color-2;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

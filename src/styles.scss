@@ -1,0 +1,32 @@
+// @import './settings';
+
+// @import './pages/all';
+
+// @import './components/all';
+
+// @import './utils/all';
+
+//utils
+@use 'src/styles/utils/mixins';
+@use 'src/styles/utils/variables';
+
+//base
+@use 'src/styles/base/base';
+@use 'src/styles/base/typography';
+
+//layouts
+@use 'src/styles/layouts/navbar';
+@use 'src/styles/layouts/footer';
+
+//components
+@use 'src/styles/components/card';
+@use 'src/styles/components/icons';
+@use 'src/styles/components/modal';
+@use 'src/styles/components/tags';
+
+//pages
+@use 'src/styles/pages/home';
+@use 'src/styles/pages/hrnet';
+@use 'src/styles/pages/learnhome';
+@use 'src/styles/pages/oxyty';
+@use 'src/styles/pages/contact';
