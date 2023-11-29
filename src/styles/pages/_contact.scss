@@ -1,8 +1,6 @@
-@import '../settings';
-// @import '../mixins';
+@import '../utils/variables';
 
 .contact {
-  // @include align-content;
   display: flex;
   flex-direction: column;
   align-items: center;

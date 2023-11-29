@@ -1,4 +1,4 @@
-@import '../settings';
+@import '../utils/variables';
 
 .home {
   display: flex;
@@ -28,6 +28,11 @@
   .home {
     &__presentation {
       padding: 40px;
+
+      h1 {
+        text-align: center;
+        font-size: 45px;
+      }
 
       p {
         font-size: 35px;

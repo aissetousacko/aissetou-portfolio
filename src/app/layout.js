@@ -12,9 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
+      {/* <Head>
         <link rel="preload" href={lhDisplay} as="image" />
-      </Head>
+      </Head> */}
       <body>
         <Navbar />
         {children}

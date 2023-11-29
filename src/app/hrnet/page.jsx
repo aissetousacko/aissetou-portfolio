@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import hrnetDisplay from 'public/hrnet/hrnet_display.png'
 import Link from 'next/link'
-import { FaGithub, FaLink } from 'react-icons/fa'
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 
 const HRNet = () => {
   return (
@@ -56,7 +56,7 @@ const HRNet = () => {
           target={'_blank'}
           className="icon"
         >
-          <FaLink />
+          <FaExternalLinkAlt />
         </Link>
         <Link
           href="https://github.com/aissetousacko/OC_14_HRnet.git"
