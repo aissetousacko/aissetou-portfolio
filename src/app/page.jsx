@@ -27,7 +27,6 @@ const Home = () => {
           <IoLogoJavascript />
           <FaPhp />
           <FaReact />
-
           <FaSymfony />
           <FaLaravel />
           <FaFigma />
