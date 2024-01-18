@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Card from '../components/Card'
+import kda from 'public/kda/kda_cover.png'
 import oxyty from 'public/oxyty/oxyty_cover.png'
 import hrnet from 'public/hrnet/hrnet_cover.png'
 import learnHome from 'public/learn_home/lh_cover.png'
@@ -35,6 +36,9 @@ const Home = () => {
       </div>
 
       <div className="home__work">
+        <Link href="/kda">
+          <Card img={kda} title="K/DA" description="Site de présentation" />
+        </Link>
         <Link href="/oxyty">
           <Card
             img={oxyty}
