@@ -5,7 +5,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
 
   &__presentation {
     padding: 180px 100px;
@@ -54,6 +53,7 @@
 
 @media (max-width: 480px) {
   .home {
+    margin-top: 80px;
     &__presentation {
       padding: 32px;
 
