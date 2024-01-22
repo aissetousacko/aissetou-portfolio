@@ -6,9 +6,29 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
-  background: white;
-  margin: 0 10px;
+  background-image: linear-gradient(
+    to right bottom,
+    #ffe6dc,
+    #ffeae7,
+    #ffeef1,
+    #fef4f9,
+    #fdf9fd,
+    #fdf9fd,
+    #fcfafc,
+    #fcfafc,
+    #fbf6f9,
+    #fbf2f5,
+    #faeeef,
+    #f9ebe9
+  );
+  // width: 100%;
+  // min-height: 100%;
+  margin: 0 auto;
 }
 
 li {
