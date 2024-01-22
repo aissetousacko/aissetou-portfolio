@@ -23,9 +23,31 @@
   &__item {
     font-size: 20px;
     color: black;
-    padding: 0 10px;
+    margin: 0 10px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+
     &:hover {
       color: $color-1;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: $color-1;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
     }
   }
 }

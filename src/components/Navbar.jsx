@@ -16,12 +16,6 @@ const Navbar = () => {
     icon === 'hamburger' ? setIcon('hamburger active') : setIcon('hamburger')
   }
 
-  // hamburger.addEventListener('click', () => {
-  //   console.log('click')
-  //   hamburger.classList.toggle('active')
-  //   nav.classList.toggle('active')
-  // })
-
   return (
     <nav className="navbar">
       <Link href="/">
