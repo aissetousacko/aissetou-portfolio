@@ -22,7 +22,6 @@ body {
     #faeeef,
     #f9ebe9
   );
-  // width: 100%;
   min-height: 100vh;
 }
 
@@ -43,4 +42,22 @@ button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+main {
+  background-image: linear-gradient(
+      #fff4f0 0.5px,
+      transparent 0.5px,
+      transparent calc(100% - 0.5px),
+      #fff4f0 calc(100% - 0.5px)
+    ),
+    linear-gradient(
+      90deg,
+      #fff4f0 0.5px,
+      transparent 0.5px,
+      transparent calc(100% - 0.5px),
+      #fff4f0 calc(100% - 0.5px)
+    );
+  background-size: 100px 100px;
+  border: 0.5px solid #fff4f0;
 }
