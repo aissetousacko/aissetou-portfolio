@@ -7,6 +7,7 @@ import { useState } from 'react'
 const Navbar = () => {
   const [active, setActive] = useState('navbar__tabs')
   const [icon, setIcon] = useState('hamburger')
+  const tabs = document.querySelectorAll('.navbar__tabs')
 
   const navToggle = () => {
     active === 'navbar__tabs'
@@ -14,6 +15,12 @@ const Navbar = () => {
       : setActive('navbar__tabs')
 
     icon === 'hamburger' ? setIcon('hamburger active') : setIcon('hamburger')
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        setActive('navbar__tabs')
+      })
+    })
   }
 
   return (
