@@ -2,7 +2,12 @@ import Image from 'next/image'
 import React from 'react'
 import hrnetDisplay from 'public/hrnet/hrnet_display.png'
 import Link from 'next/link'
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
+import {
+  FaGithub,
+  FaExternalLinkAlt,
+  FaArrowLeft,
+  FaArrowRight,
+} from 'react-icons/fa'
 
 const HRNet = () => {
   return (
@@ -16,6 +21,7 @@ const HRNet = () => {
           height={560}
           sizes="(min-width: 500px) 750px, 460px"
           alt="Cover HRNet"
+          priority
         />
 
         <div className="hrnet__infosRight">
@@ -64,6 +70,18 @@ const HRNet = () => {
           className="icon"
         >
           <FaGithub />
+        </Link>
+      </div>
+
+      <div className="redirections">
+        <Link href="/oxyty" className="redirection-btn redirections__box">
+          <FaArrowLeft />
+          <h3>Oxyty</h3>
+        </Link>
+
+        <Link href="/learn-home" className="redirection-btn redirections__box">
+          <h3>Learn@Home</h3>
+          <FaArrowRight />
         </Link>
       </div>
     </div>

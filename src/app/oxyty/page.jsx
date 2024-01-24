@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import oxytyDisplay from 'public/oxyty/oxyty_display.png'
 import Link from 'next/link'
-import { FaGithub, FaImage } from 'react-icons/fa'
+import { FaArrowLeft, FaArrowRight, FaGithub, FaImage } from 'react-icons/fa'
 import Modal from '../../components/Modal'
 import oxyty1 from 'public/oxyty/oxyty-1.png'
 import oxyty2 from 'public/oxyty/oxyty-2.png'
@@ -24,6 +24,7 @@ const Oxyty = () => {
             height={560}
             sizes="(min-width: 500px) 750px, 460px"
             alt="Cover Oxyty"
+            priority
           />
         </div>
 
@@ -89,6 +90,18 @@ const Oxyty = () => {
         onClose={() => setShowModal(false)}
         slides={slides}
       />
+
+      <div className="redirections">
+        <Link href="/kda" className="redirection-btn redirections__box">
+          <FaArrowLeft />
+          <h3>K/DA</h3>
+        </Link>
+
+        <Link href="/hrnet" className="redirection-btn redirections__box">
+          <h3>HRNet</h3>
+          <FaArrowRight />
+        </Link>
+      </div>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 'use client'
 import lhDisplay from 'public/learn_home/lh_display.png'
-import { FaImage } from 'react-icons/fa'
+import { FaArrowLeft, FaArrowRight, FaImage } from 'react-icons/fa'
 import Image from 'next/image'
 import Modal from '../../components/Modal'
 import { Fragment, useState } from 'react'
@@ -12,6 +12,7 @@ import lh5 from 'public/learn_home/lh-5.png'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import Link from 'next/link'
 
 const LearnHome = () => {
   const [showModal, setShowModal] = useState(false)
@@ -29,6 +30,7 @@ const LearnHome = () => {
             height={560}
             sizes="(min-width: 500px) 750px, 460px"
             alt="Mockup Learn@Home"
+            priority
           />
 
           <div className="learn__infosRight">
@@ -66,6 +68,18 @@ const LearnHome = () => {
           onClose={() => setShowModal(false)}
           slides={slides}
         />
+
+        <div className="redirections">
+          <Link href="/hrnet" className="redirection-btn redirections__box">
+            <FaArrowLeft />
+            <h3>HRNet</h3>
+          </Link>
+
+          <Link href="/kda" className="redirection-btn redirections__box">
+            <h3>K/DA</h3>
+            <FaArrowRight />
+          </Link>
+        </div>
       </div>
     </Fragment>
   )

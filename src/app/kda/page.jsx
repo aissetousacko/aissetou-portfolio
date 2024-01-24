@@ -2,7 +2,12 @@ import Image from 'next/image'
 import React from 'react'
 import kdaDisplay from 'public/kda/kda_display.png'
 import Link from 'next/link'
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
+import {
+  FaGithub,
+  FaExternalLinkAlt,
+  FaArrowLeft,
+  FaArrowRight,
+} from 'react-icons/fa'
 
 const KDA = () => {
   return (
@@ -12,6 +17,8 @@ const KDA = () => {
       <div className="kda__infos">
         <Image
           src={kdaDisplay}
+          width={750}
+          height={560}
           sizes="(min-width: 500px) 750px, 460px"
           alt="Cover kda"
           priority
@@ -64,6 +71,18 @@ const KDA = () => {
           className="icon"
         >
           <FaGithub />
+        </Link>
+      </div>
+
+      <div className="redirections">
+        <Link href="/learn-home" className="redirection-btn redirections__box">
+          <FaArrowLeft />
+          <h3>Learn@Home</h3>
+        </Link>
+
+        <Link href="/oxyty" className="redirection-btn redirections__box">
+          <h3>Oxyty</h3>
+          <FaArrowRight />
         </Link>
       </div>
     </div>

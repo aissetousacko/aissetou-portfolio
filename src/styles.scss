@@ -10,12 +10,12 @@
 @use 'src/styles/layouts/footer';
 
 //components
-@use 'src/styles/components/buttons';
 @use 'src/styles/components/card';
 @use 'src/styles/components/icons';
 @use 'src/styles/components/modal';
 @use 'src/styles/components/slider';
 @use 'src/styles/components/tags';
+@use 'src/styles/components/redirections';
 
 //pages
 @use 'src/styles/pages/home';
