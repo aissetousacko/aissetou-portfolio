@@ -4,9 +4,18 @@ import { FaImage } from 'react-icons/fa'
 import Image from 'next/image'
 import Modal from '../../components/Modal'
 import { Fragment, useState } from 'react'
+import lh1 from 'public/learn_home/lh-1.png'
+import lh2 from 'public/learn_home/lh-2.png'
+import lh3 from 'public/learn_home/lh-3.png'
+import lh4 from 'public/learn_home/lh-4.png'
+import lh5 from 'public/learn_home/lh-5.png'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
 const LearnHome = () => {
   const [showModal, setShowModal] = useState(false)
+  const slides = [lh1, lh2, lh3, lh4, lh5]
 
   return (
     <Fragment>
@@ -52,7 +61,11 @@ const LearnHome = () => {
           <FaImage />
         </button>
 
-        <Modal isVisible={showModal} onClose={() => setShowModal(false)} />
+        <Modal
+          isVisible={showModal}
+          onClose={() => setShowModal(false)}
+          slides={slides}
+        />
       </div>
     </Fragment>
   )

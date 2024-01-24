@@ -5,9 +5,12 @@ import oxytyDisplay from 'public/oxyty/oxyty_display.png'
 import Link from 'next/link'
 import { FaGithub, FaImage } from 'react-icons/fa'
 import Modal from '../../components/Modal'
+import oxyty1 from 'public/oxyty/oxyty-1.png'
+import oxyty2 from 'public/oxyty/oxyty-2.png'
 
 const Oxyty = () => {
   const [showModal, setShowModal] = useState(false)
+  const slides = [oxyty1, oxyty2]
 
   return (
     <div className="oxyty">
@@ -81,7 +84,11 @@ const Oxyty = () => {
         </Link>
       </div>
 
-      <Modal isVisible={showModal} onClose={() => setShowModal(false)} />
+      <Modal
+        isVisible={showModal}
+        onClose={() => setShowModal(false)}
+        slides={slides}
+      />
     </div>
   )
 }

@@ -1,8 +1,9 @@
 'use client'
 import React from 'react'
 import { FaTimes } from 'react-icons/fa'
+import Slider from './Slider'
 
-const Modal = ({ isVisible, onClose }) => {
+const Modal = ({ isVisible, onClose, slides }) => {
   if (!isVisible) return null
 
   const handleClose = (e) => {
@@ -10,18 +11,12 @@ const Modal = ({ isVisible, onClose }) => {
   }
 
   return (
-    <div
-      className="modal__container"
-      id="wrapper"
-      onClick={(e) => handleClose(e)}
-    >
-      <div className="modal">
-        <button className="modal__close" onClick={() => onClose()}>
-          <FaTimes />
-        </button>
+    <div id="wrapper" className="modal" onClick={(e) => handleClose(e)}>
+      <button className="modal__close" onClick={() => onClose()}>
+        <FaTimes />
+      </button>
 
-        <h1>Soon...</h1>
-      </div>
+      <Slider slides={slides} />
     </div>
   )
 }
