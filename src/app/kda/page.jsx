@@ -12,10 +12,9 @@ const KDA = () => {
       <div className="kda__infos">
         <Image
           src={kdaDisplay}
-          width={750}
-          height={560}
           sizes="(min-width: 500px) 750px, 460px"
           alt="Cover kda"
+          priority
         />
 
         <div className="kda__infosRight">
@@ -44,7 +43,10 @@ const KDA = () => {
             </div>
           </div>
 
-          <p className="tagDev">Front - End</p>
+          <div className="tags">
+            <p className="tagUi">UI Design</p>
+            <p className="tagDev">Front - End</p>
+          </div>
         </div>
       </div>
 
