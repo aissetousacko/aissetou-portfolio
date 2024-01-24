@@ -12,11 +12,20 @@ const Contact = () => {
       <h1>Contact</h1>
 
       <div className="contact__infos">
-        <p>Aïssetou SACKO</p>
-        <p>Saint Ouen l&apos;Aumône, France</p>
-        <p>aissetou.sck@gmail.com</p>
+        <p>
+          Envie de travailler ensemble ? N&apos;hésitez pas à me contacter !
+        </p>
+
+        <Link
+          href="mailto:aissetou.sck@gmail.com"
+          className="contact__iconbox"
+          target="_blank"
+        >
+          <FaEnvelope />
+        </Link>
       </div>
 
+      <h2>Retrouvez-moi aussi sur les réseaux : </h2>
       <ul className="contact__network">
         <li>
           <Link
@@ -35,16 +44,6 @@ const Contact = () => {
             target="_blank"
           >
             <FaGithub />
-          </Link>
-        </li>
-
-        <li>
-          <Link
-            href="mailto:aissetou.sck@gmail.com"
-            className="contact__iconbox"
-            target="_blank"
-          >
-            <FaEnvelope />
           </Link>
         </li>
       </ul>
